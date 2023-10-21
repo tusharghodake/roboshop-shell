@@ -1,13 +1,13 @@
 
 script_location=$(pwd)
 
-set -e
+#set -e
 
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash
 
 dnf install nodejs -y
 
-#useradd roboshop
+useradd roboshop
 
 mkdir -p /app
 
@@ -25,3 +25,6 @@ cp ${script_location}/files/catalogue.service /etc/systemd/system/catalogue.serv
 systemctl daemon-reload
 systemctl enable catalogue
 systemctl start catalogue
+
+cp ${script_location}/files/mongodb.repo  /etc/yum.repos.d/mongodb.repo
+dnf install mongodb-org-shell -y
