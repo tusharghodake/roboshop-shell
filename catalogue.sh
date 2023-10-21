@@ -28,3 +28,6 @@ systemctl start catalogue
 
 cp ${script_location}/files/mongodb.repo  /etc/yum.repos.d/mongodb.repo
 dnf install mongodb-org-shell -y
+
+#schema loading
+mongo --host localhost </app/schema/catalogue.js
