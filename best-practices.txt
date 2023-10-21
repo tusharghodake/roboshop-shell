@@ -1,2 +1,4 @@
 1. Rerun of automation scripts should not failed.
 2. If user is already exists we should not create user.
+3. If directory already exists dont create again.
+    use -p for this. ex- mkdir -p /app
