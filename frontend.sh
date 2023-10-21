@@ -27,15 +27,8 @@ else
   echo FAILURE
 fi
 
+echo -e "\e[35m Extract Download frontend content\e[0m"
 cd /usr/share/nginx/html &>>${LOG}
-if [ $? -eq 0 ]
-then
-  echo SUCCESS
-else
-  echo FAILURE
-fi
-
-echo -e "\e[35m Extract wnload frontend content\e[0m"
 unzip /tmp/frontend.zip &>>${LOG}
 if [ $? -eq 0 ]
 then
