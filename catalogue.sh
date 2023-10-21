@@ -26,6 +26,8 @@ then
   echo SUCCESS
 else
   echo FAILURE
+  echo "For more information check logs- ${LOG}"
+exit
 fi
 
 echo -e "\e[35m Create App Directory\e[0m"
