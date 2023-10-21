@@ -7,6 +7,7 @@ then
   echo SUCCESS
 else
   echo FAILURE
+exit
 fi
 
 echo -e "\e[35m Remove Nginx Old content\e[0m"
@@ -16,6 +17,7 @@ then
   echo SUCCESS
 else
   echo FAILURE
+exit
 fi
 
 echo -e "\e[35m Download frontend content\e[0m"
@@ -25,6 +27,7 @@ then
   echo SUCCESS
 else
   echo FAILURE
+exit
 fi
 
 echo -e "\e[35m Extract Download frontend content\e[0m"
@@ -35,6 +38,7 @@ then
   echo SUCCESS
 else
   echo FAILURE
+exit
 fi
 
 echo -e "\e[35m Copy Roboshop Nginx config file\e[0m"
@@ -44,6 +48,7 @@ then
   echo SUCCESS
 else
   echo FAILURE
+exit
 fi
 
 echo -e "\e[35m Enable Nginx\e[0m"
@@ -53,6 +58,7 @@ then
   echo SUCCESS
 else
   echo FAILURE
+exit
 fi
 
 echo -e "\e[35m Start Nginx\e[0m"
@@ -62,4 +68,5 @@ then
   echo SUCCESS
 else
   echo FAILURE
+exit
 fi
