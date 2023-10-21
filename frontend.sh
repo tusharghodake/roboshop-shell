@@ -1,4 +1,4 @@
-script_location=${pwd}
+script_location=$(pwd)
 
 echo -e "\e[35m Install Nginx\e[0m"
 dnf install nginx -y
