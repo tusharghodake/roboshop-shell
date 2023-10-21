@@ -1,0 +1,2 @@
+1. Rerun of automation scripts should not failed.
+2. If user is already exists we should not create user.
